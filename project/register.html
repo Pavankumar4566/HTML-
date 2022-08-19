@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{color:yellow;
+text-decoration:underline;
+text-decoration-color:black;
+text-shadow:3px 3px 2px black,3px 3px 3px black;
+font-size:60px;
+font-family:georgia;
+word-spacing:2px;}
+body{background-color:lightblue;}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.a{float:left;
+width:100px;}
+</style>
+</head>
+<body>
+<img class="a" src="saraswathi.jpeg"></img>
+<center><h1>Registration Form</h1><center>
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+ <div class="row">
+    <div class="col-25">
+      <label for="fname">Middle Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="middle name" placeholder="Your middle name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="state">State</label>
+    </div>
+  <div class="col-75">
+      <select id="State" name="State">
+        <option value="andhra pradesh">Andhra pradesh</option>
+        <option value="Telangana">Telangana</option>
+      </select>
+    </div>
+  </div> 
+<div class="row">
+    <div class="col-25">
+      <label for="lname">Gender</label>
+    </div>
+  <div class="col-75">
+      <select id="Gender">
+<td><input type="radio" id="1" name="gender" value="male"><label for="1" >Male</label>
+<input type="radio" id ="2" name="gender" value="female"><label for="2" >Female</label>
+<input type="radio" id= "3"name="gender" value="others"><label for="3" >Others</label>
+    </select></div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="fname">Phone number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="phone number" placeholder="Enter your number..">
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="fname">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="phone number" placeholder="Enter your mail...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Suggestions</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="suggestions" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+ 
+  <br>
+  <div class="row">
+    <!-- <input type="submit" value="Submit"> -->
+<a class="one" href="project raghu.html">Submit</a>
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+

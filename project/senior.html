@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>
+Registration Form 
+</title>
+<style>
+.a{
+ color:blue;
+ text-align:center;
+ font-size:25px;
+ background-color:white;
+}
+.center
+{
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+width:70%;
+background-image:url('https://www.womenbuildingaustralia.com.au/sites/default/files/images/Poly_BG_Grad%20%281%29_0_1.png');background-repeat:no=repeat;background-size:cover;
+
+}
+table,th,td{
+border:solid white 3px;
+border-collapse:collapse;
+font-size:20px;
+padding:15px;
+color:white;
+}
+</style> 
+<script>
+function FUN(){
+ var fname=document.forms["regform"]["fname"];
+ var mname=document.forms["regform"]["mname"];
+ var lname=document.forms["regform"]["lname"];
+ var branch=document.forms["regform"]["branch"];
+ var gender=document.forms["regform"]["gender"];
+ var dob=document.forms["regform"]["date"];
+ var email=document.forms["regform"]["email"];
+ var phone=document.forms["regform"]["phone"];
+  
+if(fname.value==""){
+ window.alert("FIRST NAME IS EMPTY");
+ fname.focus();
+ return false;
+ }
+else{
+document.write("\n"+"FIRST NAME : "+fname.value);
+document.write("<br>");
+}
+
+if(mname.value==""){
+ window.alert("MIDDLE NAME IS EMPTY");
+ mname.focus();
+ return false;
+ }
+else{
+document.write("<br>");
+document.write("\n"+"MIDDLE NAME : "+mname.value);
+}
+if(lname.value==""){
+ window.alert("LAST NAME IS EMPTY");
+ lname.focus();
+ return false;
+ }
+else{
+document.write("<br>");
+document.write("\n"+"LAST NAME : "+lname.value);
+}
+
+if(branch.value==""){
+ window.alert("BRANCH IS EMPTY");
+ branch.focus();
+ return false;
+ }
+else{
+document.write("<br>");
+document.write("\n"+"BRANCH : "+branch.value);
+}
+}
+</script>
+</head>
+<body>
+<p class="a"><b> REGISTRATION FORM </b></p>
+<form name="regform" action="" onsubmit="return FUN()" >
+<table class="center" >
+  <tr>
+    <td>First Name     </td> 
+    <td><input type="text" name="fname" REQUIRED></td>
+  </tr>
+  <tr>
+     <td>Middle Name     </td> 
+    <td><input type="text" name="mname" ></td>
+  </tr>
+  <tr>
+     <td>Last Name     </td> 
+    <td><input type="text" REQUIRED name="lname"></td>
+  </tr>
+  <tr> 
+<td>Branch</td>
+<td><select>  
+<option value="Course" name="branch">Branch</option>  
+<option value="CSE" name="branch">CSE</option>  
+<option value="ECE" name="branch">ECE</option>  
+<option value="EEE" name="branch">EEE</option>
+<option value="MECH" name="branch">MECH</option> 
+</select>  </td>
+  </tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" id="1" name="gender" value="male"><label for="1" >Male</label>
+<input type="radio" id ="2" name="gender" value="female"><label for="2" >Female</label>
+<input type="radio" id= "3"name="gender" value="others"><label for="3" >Others</label>
+</tr>
+<tr>
+<td>Date-Of-Birth</td>
+<td><input type="date" name="date"></td>
+<tr>
+<tr>
+<td>Email</td>
+<td><input type="email" name="email"></td>
+<tr>
+<tr>
+<td>Phone</td>
+<td><input type="text" value="+91" size="1" name="phone"><input type="text" value="" size="10" width="30"></td>
+<tr>
+<td>Suggestion</td>
+<td><textarea cols="50" rows="10" name="texts"></textarea></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="pass"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="submit"><input type="reset" name="reset"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
